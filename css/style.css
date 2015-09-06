@@ -1,0 +1,18 @@
+li a {
+	transition: background-color 1000ms ease-in-out;
+	background-color: #000;
+}
+
+li:hover {
+	background-color: #fff;
+}
+
+
+.nav-fixed {
+	position: fixed;
+	margin-top: 20px;
+}
+
+.content {
+	height:800px;
+}
