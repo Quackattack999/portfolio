@@ -8,27 +8,41 @@ body {
 	background-color: #476C47;
 }
 
-li a {
+/*nav////////*/
+
+nav {
+	box-shadow: 10px 10px 10px #3A573A, -2px 0px 10px #3A573A
+}
+
+.nav-pills>li>a {
 	font-family: 'Nunito', sans-serif;
 	color: #E4FFC9;
 	background-color: #3A573A;
+	border-radius: 5px 50px;
 
-	-webkit-transition: color .5s linear, background-color .5s ease-in-out;
-	transition: color .5s linear, background-color .5s ease-in-out;	
+	transition-timing-function: ease-in-out;
+	-webkit-transition: color .5s, background-color .5s;
+	transition: color .5s, background-color .5s;	
 }
 
-li:hover {
-	background-color: #476C47;
+.nav-pills>li:hover{
+	border-radius: 5px 50px;
+	background-color: rgba(228, 255, 201, .3);
+}
 
-	-webkit-transition: background-color .25s ease-in-out;
-	transition: background-color .25s ease-in-out;
+li>a:hover {
+	color: #3A573A;
 }
 
 
 .nav-fixed {
-	position: fixed;
-	margin-top: 20px;
+    height: 100vh;
+    background-color:rgba(228, 255, 201, .3);
+    position: fixed;
+    padding-top: 20px;
 }
+
+/*content////*/
 
 .content {
 	padding: 0px 12px 12px 12px;
@@ -37,7 +51,6 @@ li:hover {
 	top: 215px;
 	border:2px solid #E4FFC9;
 	border-radius: 5px 50px;
-	box-shadow: 10px 10px 10px #3A573A, -10px 0px 10px #3A573A;
 }
 
 .content h2 {
@@ -55,6 +68,8 @@ li:hover {
 	background-position: center;
 }
 
+/*footer////*/
+
 footer {
 	font-family: 'Alegreya', sans-serif;
 	padding-top: 8px;
@@ -65,17 +80,13 @@ footer {
 	top: 300px;
 }
 
-@media (min-width: 992px) {
-	.content{
-		box-shadow: none;
-		}
-}
+/*media queries*/
 
 @media (max-width: 992px) {
 	.content{
 		background-color: #476C47;
 		border: none;
-		box-shadow: 10px 10px 10px #3A573A, -10px 0px 10px #3A573A;
+		box-shadow: 10px 10px 10px #3A573A, -2px 0px 10px #3A573A;
 		}
 }
 
