@@ -1,11 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300|Quicksand|Alegreya);
+
 body {
+	font-family: 'Quicksand', sans-serif;
 	text-align: center;
 	color: #E4FFC9;
-	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	text-shadow: 0 4px 6px rgba(0,0,0,.5);
 	background-color: #476C47;
 }
 
 li a {
+	font-family: 'Nunito', sans-serif;
+	color: #E4FFC9;
 	background-color: #3A573A;
 
 	-webkit-transition: color .5s linear, background-color .5s ease-in-out;
@@ -13,7 +18,7 @@ li a {
 }
 
 li:hover {
-	background-color: #000099;
+	background-color: #476C47;
 
 	-webkit-transition: background-color .25s ease-in-out;
 	transition: background-color .25s ease-in-out;
@@ -26,16 +31,22 @@ li:hover {
 }
 
 .content {
+	padding: 0px 12px 12px 12px;
+	background-color: #3A573A;
 	position: relative;
 	top: 215px;
 	border:2px solid #E4FFC9;
-	border-style: groove;
-	border-radius: 15px 50px 30px;
-	box-shadow: 10px 0px 10px #3A573A, -10px 0px 10px #3A573A;
+	border-radius: 5px 50px;
+	box-shadow: 10px 10px 10px #3A573A, -10px 0px 10px #3A573A;
+}
+
+.content h2 {
+	font-family: 'Nunito', sans-serif;
 }
 
 #flower {
 	height: 200px;
+	border-radius: 10px;
 	background-image: url(../img/flower.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -45,6 +56,33 @@ li:hover {
 }
 
 footer {
-	position: relative;
-	bottom: 0;
+	font-family: 'Alegreya', sans-serif;
+	padding-top: 8px;
+	text-align: left;	
+	border-radius: 20px;
+	background-color: #3A573A;
+	position: fixed;
+	top: 300px;
 }
+
+@media (min-width: 992px) {
+	.content{
+		box-shadow: none;
+		}
+}
+
+@media (max-width: 992px) {
+	.content{
+		background-color: #476C47;
+		border: none;
+		box-shadow: 10px 10px 10px #3A573A, -10px 0px 10px #3A573A;
+		}
+}
+
+@media (min-width: 992px) {
+	.adjust{
+		position: relative;
+		right: 146px;
+	}
+}
+
